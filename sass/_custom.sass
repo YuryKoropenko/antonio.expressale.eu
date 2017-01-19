@@ -1,0 +1,67 @@
+@import "bourbon/bourbon"
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+button, button:active, button:focus,
+input, input:active, input:focus
+	outline: none
+
+ol, ul
+	list-style: none
+
+.clearfix
+	&:after
+		content: ''
+		display: table
+		clear: both
+	&:before
+		content: ''
+		display: table
+
+a
+	&:hover, &:focus, &:active
+		color: #fff
+		text-decoration: none
+
+body
+	.ui-menu .ui-menu-item-wrapper
+		text-transform: uppercase !important
+		font-size: 14px
+	.ui-widget.ui-widget-content
+		background-color: #1a71a7
+		border: none
+	.ui-menu-item-wrapper
+		color: #fff
+		letter-spacing: 0.5px
+		padding: 10px 0 !important
+		text-align: center
+	.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+		border: none !important
+	.ui-menu .ui-state-focus, .ui-menu .ui-state-active
+		margin: 0 !important
+	.ui-button
+		padding: 10px 0
+.advantages
+	&__item
+		&-img
+			display: block
+			width: 100%
+	&__right
+		&-title
+		&-description

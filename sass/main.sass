@@ -1,0 +1,216 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/_custom"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "OpenSansRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.header
+	height: 620px
+	position: relative
+	&__top
+		background-color: rgba(#305686,.4)
+		height: 78px
+
+
+.logo
+	padding-top: 16px
+	&__link
+		display: block
+		width: 112px
+		height: 40px
+	&__img
+		width: 100%
+		display: block
+
+.nav
+	font-size: 0
+	&__item
+		display: inline-block
+		&:first-child
+			margin-left: 0
+	&__link
+		font-size: 14px
+		color: #fff
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		line-height: 78px
+		display: block
+		padding: 0 35px
+		&:hover
+			background-color: #1971a8
+
+.phone
+	color: #fff
+	font-size: 16px
+	letter-spacing: 0.5px
+	display: inline-block
+	&__wp
+		padding-top: 27px
+		text-align: center
+.language
+	text-transform: uppercase
+	color: #fff
+	font-size: 14px
+	letter-spacing: 0.5px
+	display: inline-block
+	&__wp
+		padding-top: 20px
+		text-align: center
+	.ui-selectmenu-button-closed
+		width: 67px
+		background-color: transparent
+		border: none
+		color: #fff
+		position: relative
+		padding-left: 17px
+		&::after
+			content: '\f107'
+			font-family: FontAwesome
+			position: absolute
+			display: block
+			right: 16px
+			top: 50%
+			transform: translateY(-50%)
+	.ui-selectmenu-button-open
+		width: 67px
+		background-color: #1a71a7
+		border: none
+		color: #fff
+		position: relative
+		padding-left: 17px
+		&::after
+			content: '\f106'
+			font-family: FontAwesome
+			position: absolute
+			display: block
+			right: 16px
+			top: 50%
+			transform: translateY(-50%)
+	.ui-selectmenu-icon
+		display: none
+.slider
+	padding-top: 80px
+	text-align: center
+	padding-bottom: 63px
+	.slick-dots
+		font-size: 0
+		display: inline-block
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		li
+			display: inline-block
+			margin-left: 28px
+			width: 15px
+			height: 15px
+			position: relative
+			&:first-child
+				margin-left: 0
+			button
+				height: 9px
+				width: 9px
+				padding: 0
+				display: block
+				border-radius: 50%
+				background-color: #fff
+				border: none
+				text-indent: -9999px
+				margin: 0 auto
+				margin-top: 3px
+		.slick-active
+			button
+				width: 15px
+				height: 15px
+				-webkit-box-shadow: 0px 0px 5px 1px rgba(255,255,255,1)
+				-moz-box-shadow: 0px 0px 5px 1px rgba(255,255,255,1)
+				box-shadow: 0px 0px 5px 1px rgba(255,255,255,1)
+				margin-top: 0
+	&__item
+		text-align: left
+		&-img
+			display: block
+	&__right
+		
+		&-title
+			color: #fff
+			font-family: "PTSerifRegular", sans-serif
+			letter-spacing: 0.5px
+			color: #fff
+			font-size: 44px
+			text-transform: uppercase
+			display: block
+			padding-bottom: 16px
+		&-description
+			color: #fff
+			font-size: 16px
+			line-height: 30px
+			display: block
+			padding-bottom: 34px
+		&-button
+			font-size: 16px
+			color: #156da6
+			font-family: "OpenSansSemibold", sans-serif
+			background-color: #fff
+			display: inline-block
+			padding: 12px 30px
+			border-radius: 4px
+			border: 2px solid #fff
+			@include transition(all 0.4s ease-in-out)
+			line-height: 100%
+			&:hover, &:focus, &:active
+				background-color: transparent
+				color: #fff
+.bg-slider
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	height: 620px
+	&__item
+	&__img
+		width: 100%
+		height: 620px
+		display: block
+.advantages
+	padding: 40px 0
+	&__item
+		&-img
+			display: block
+			width: 100%
+			height: 268px
+	&__right
+		text-align: center
+		padding-top: 70px
+		&-title
+			font-family: "PTSerifRegular", sans-serif
+			font-size: 30px
+			color: #000
+			display: block
+			margin-bottom: 16px
+			padding-bottom: 10px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				width: 75px
+				height: 3px
+				background-color: #0981db
+				bottom: 0
+				left: 0
+				right: 0
+				margin: 0 auto
+		&-description
+			display: block
+			font-size: 14px
+			line-height: 18px
+			color: #000
