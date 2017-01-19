@@ -15,3 +15,9 @@
   font-family: "PTSerifRegular";
   src: url(../fonts/PTSerif/PTSerifRegular.ttf);
 }
+
+/* font-family: "OpenSansItalic" */
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url(../fonts/OpenSans/OpenSansItalic.ttf);
+}

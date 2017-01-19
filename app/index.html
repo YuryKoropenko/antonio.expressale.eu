@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
 	<link rel="stylesheet" href="libs/slick-js/slick/slick.css">
+	<link rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -22,6 +23,7 @@
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="libs/slick-js/slick/slick.min.js"></script>
+	<script type="text/javascript" src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </head>
@@ -115,7 +117,9 @@
 								$('.slider').slick({
 									arrows: false,
 									dots: true,
-									asNavFor: '.bg-slider'
+									asNavFor: '.bg-slider',
+									autoplay: true,
+									autoplaySpeed: 4000
 								});
 							});
 						</script>
@@ -133,7 +137,7 @@
 											<p class="slider__right-description">
 												Компания Antonio Trade OÜ с 2007 года осуществляет оптовые поставки климатического и холодильного оборудования, компь- ютерной, мультимедийной и оргтехники, а также продукции металлургической промышленности.
 											</p>
-											<a href="#" class="slider__right-button">
+											<a href="#writetous" class="slider__right-button">
 												Напишите нам
 											</a>
 										</div>
@@ -153,7 +157,7 @@
 											<p class="slider__right-description">
 												Компания Antonio Trade OÜ осуществляет оптовые поставки качественной компьютерной техники, бытовой и офисной электроники, мультимедийных систем и других товаров данной отрасли
 											</p>
-											<a href="#" class="slider__right-button">
+											<a href="#writetous" class="slider__right-button">
 												Напишите нам
 											</a>
 										</div>
@@ -173,7 +177,7 @@
 											<p class="slider__right-description">
 												Оптовые поставки климатического и холодильного оборудования, а также комплектующих к нему - главное направление в деятельности компании. Номенклатура поставок охватывает спектр товаров данной отрасли от мобильных кондиционеров до климатических комплексов
 											</p>
-											<a href="#" class="slider__right-button">
+											<a href="#writetous" class="slider__right-button">
 												Напишите нам
 											</a>
 										</div>
@@ -193,7 +197,9 @@
 					<script>
 						$(document).ready(function() {
 							$('.advantages').slick({
-								arrows: false
+								arrows: false,
+								autoplay: true,
+								autoplaySpeed: 3000
 							});
 						});
 					</script>
@@ -270,6 +276,91 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="logo footer__top-logo">
+							<a href="#" class="logo__link">
+								<img src="img/logo.png" alt="" class="logo__img">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<ul class="nav footer__top-nav">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									О компании
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Направления
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Партнеры
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<div class="phone__wp footer__top-phone-wp">
+							<div class="phone footer__top-phone">
+								+372 662 0921
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="copy">
+							Antonio Trade 2006-2016 ©
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="designed">
+							<div class="designed__img-wp">
+								<a href="#"><img src="img/digital-agency.png" alt="" class="designed__img"></a>
+							</div>
+							<span class="designed__text">
+								Разработано
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function() {
+			$('.slider__right-button').magnificPopup();
+		});
+	</script>
+	<div class="writetous mfp-hide" id="writetous">
+		<form action="">
+			<b class="writetous__title">
+				Напишите нам
+			</b>
+			<input type="text" class="writetous__input" placeholder="Имя" required>
+			<input type="text" class="writetous__input" placeholder="E-mail" required>
+			<textarea name="" id="" cols="30" rows="10" class="writetous__textarea" placeholder="Текст сообщения" required></textarea>
+			<button class="writetous__button">
+				Отправить
+			</button>
+		</form>
 	</div>
 </body>
 </html>

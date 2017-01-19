@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after {
+.clearfix:after, .designed:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before {
+.clearfix:before, .designed:before {
   content: '';
   display: table;
 }
@@ -69,11 +69,6 @@ body .ui-menu .ui-state-focus, body .ui-menu .ui-state-active {
 
 body .ui-button {
   padding: 10px 0;
-}
-
-.advantages__item-img {
-  display: block;
-  width: 100%;
 }
 
 body {
@@ -262,6 +257,7 @@ body {
 
 .slider__item-img {
   display: block;
+  width: 80%;
 }
 
 .slider__right-title {
@@ -359,4 +355,213 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000;
+}
+
+.footer__top {
+  height: 95px;
+  width: 100%;
+  background-color: #1f9de9;
+}
+
+.footer__top-logo {
+  padding-top: 24px;
+}
+
+.footer__top-nav {
+  padding-left: 15px;
+}
+
+.footer__top-nav .nav__link {
+  line-height: 95px;
+  padding: 0 45px;
+  font-size: 12px;
+}
+
+.footer__top-nav .nav__link:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer__top-phone-wp {
+  padding-top: 35px;
+  text-align: right;
+}
+
+.footer__bottom {
+  height: 50px;
+  width: 100%;
+  background-color: #225983;
+}
+
+.copy {
+  color: #fff;
+  font-family: "OpenSansSemibold", sans-serif;
+  font-size: 12px;
+  line-height: 50px;
+}
+
+.designed {
+  text-align: right;
+}
+
+.designed__text {
+  color: #fff;
+  font-size: 12px;
+  line-height: 50px;
+  display: block;
+  float: right;
+  font-family: "OpenSansSemibold", sans-serif;
+  margin-right: 12px;
+}
+
+.designed__img {
+  display: block;
+  width: 76px;
+  height: 30px;
+}
+
+.designed__img-wp {
+  padding-top: 10px;
+  display: inline-block;
+  float: right;
+}
+
+.writetous {
+  width: 360px;
+  height: 447px;
+  margin: 0 auto;
+  z-index: 999;
+  background-color: #fff;
+  position: relative;
+  padding: 36px 48px 49px 48px;
+}
+
+.writetous .mfp-close {
+  text-indent: -9999px;
+  width: 13px;
+  height: 13px;
+  background-image: url(../img/close.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 13px;
+  right: 11px;
+}
+
+.writetous__title {
+  color: #000;
+  font-family: "OpenSansSemibold", sans-serif;
+  font-size: 18px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.writetous__input {
+  height: 45px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+  display: block;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.writetous__input::-webkit-input-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__input::-moz-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__input:-moz-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__input:-ms-input-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__textarea {
+  height: 100px;
+  border: 1px solid #ccc;
+  width: 100%;
+  resize: none;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.writetous__textarea::-webkit-input-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__textarea::-moz-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__textarea:-moz-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__textarea:-ms-input-placeholder {
+  color: #808080;
+  font-size: 14px;
+  font-family: "OpenSansItalic", sans-serif;
+}
+
+.writetous__button {
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  font-family: "OpenSansSemibold", sans-serif;
+  font-size: 14px;
+  background-color: #1c77b6;
+  border: none;
+  text-align: center;
+}
+
+.writetous__description {
+  font-size: 14px;
+  color: #4c4c4c;
+  line-height: 24px;
+}
+
+.sent {
+  width: 360px;
+  height: 173px;
+  margin: 0 auto;
+  z-index: 999;
+  background-color: #fff;
+  position: relative;
+  padding: 36px 48px 49px 48px;
+}
+
+.sent .mfp-close {
+  text-indent: -9999px;
+  width: 13px;
+  height: 13px;
+  background-image: url(../img/close.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 13px;
+  right: 11px;
 }
