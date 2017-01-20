@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .designed:after {
+.clearfix:after, .designed:after, .sponsors:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .designed:before {
+.clearfix:before, .designed:before, .sponsors:before {
   content: '';
   display: table;
 }
@@ -761,4 +761,69 @@ body {
 
 .contacts-wrapper {
   padding-bottom: 142px;
+}
+
+.derections {
+  padding-top: 8px;
+}
+
+.derections__img {
+  width: 100%;
+}
+
+.derections__img-wp {
+  height: 370px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.derections__img-wp-2 {
+  height: 323px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.derections__img-wp-3 {
+  height: 254px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.derections__description {
+  padding-top: 0;
+}
+
+.derections__title {
+  padding-bottom: 24px;
+}
+
+.derections .list {
+  padding-top: 14px;
+}
+
+.derections .list__item {
+  padding-bottom: 0;
+}
+
+.sponsors {
+  width: 100%;
+  font-size: 0;
+  padding-top: 10px;
+}
+
+.sponsors__item {
+  height: 104px;
+  display: inline-block;
+  position: relative;
+  margin-left: 56px;
+  height: 76px;
+}
+
+.sponsors__item img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sponsors__item:first-child {
+  margin-left: 0;
 }
