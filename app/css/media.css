@@ -1,6 +1,19 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .derections__img-wp {
+    height: 392px;
+  }
+  .derections__img-wp-2 {
+    height: 345px;
+  }
+  .derections__img-wp-3 {
+    height: 275px;
+  }
+  .sponsors__item {
+    width: 33.33333%;
+    margin-left: 0;
+  }
   /**/
 }
 
@@ -12,7 +25,6 @@
   .header {
     height: auto;
     background-color: #0d87ca;
-    padding-bottom: 20px;
   }
   .header__top {
     height: auto;
@@ -103,6 +115,15 @@
   .contacts-wrapper {
     padding-bottom: 40px;
   }
+  .derections__img {
+    height: auto;
+  }
+  .derections__img-wp, .derections__img-wp-2, .derections__img-wp-3 {
+    height: auto;
+  }
+  .sponsors__item {
+    width: 50%;
+  }
   /**/
 }
 
@@ -147,6 +168,11 @@
   }
   .askaquestion .writetous__button {
     width: 100%;
+  }
+  .sponsors__item {
+    width: 100%;
+    text-align: center;
+    height: 95px;
   }
   /**/
 }
