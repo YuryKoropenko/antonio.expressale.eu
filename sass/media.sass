@@ -18,6 +18,20 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+	.askaquestion
+		width: 361px
+		margin: 0 auto
+		text-align: center
+	.writetous__button
+		margin: 0 auto
+	.slider__right-button
+		left: 0
+		right: 0
+		width: 200px
+		margin: 0 auto
+	.slider
+		.slick-dots
+			bottom: 18px
 	.bg-slider
 		display: none
 	.header
@@ -63,8 +77,14 @@
 		text-align: center
 	.phone__wp
 		padding-top: 0
+		padding-bottom: 16px !important
 	.language__wp
 		padding-top: 0
+		padding-bottom: 16px
+	.nav
+		display: none
+		z-index: 999
+		background-color: #0875b8
 	.nav__item
 		display: block
 		margin: 0 auto
@@ -77,6 +97,13 @@
 		padding: 30px 0
 	.nav
 		padding: 30px 0
+		position: absolute
+		left: 0
+		right: 0
+		width: 132.4%
+		margin-left: -16.2%
+		border-bottom: 1px solid #fff
+		border-top: 1px solid #fff
 	.phone__wp
 		padding-bottom: 30px
 	.about__img-wp
@@ -93,6 +120,31 @@
 		height: auto
 	.sponsors__item
 		width: 50%
+		text-align: center
+	.nav-toggle
+		display: block
+		position: relative
+		width: 17px
+		cursor: pointer
+		margin: 16px auto
+		&::after
+			content: "\f0c9"
+			font-family: FontAwesome
+			display: block
+			left: 0
+			top: 0
+			font-size: 20px
+			color: #fff
+	.footer__top-nav
+		display: block
+		background-color: transparent
+		border: none
+		position: relative
+	.advantages__right
+		padding-top: 16px
+	.advantages__item-img
+		height: 100%
+		width: auto
 	/**/
 
 
@@ -103,6 +155,8 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.slider__right
+		height: 394px
 	.nav__item
 		width: 100% !important
 	.slider__right-title
@@ -132,6 +186,11 @@
 		width: 100%
 		text-align: center
 		height: 95px
+	.advantages__item-img-wp
+		height: 170px
+		img
+			height: 100%
+			display: block
 	/**/
 
 
@@ -159,6 +218,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
+	.nav-toggle
+		display: none
 	/**/
 
 

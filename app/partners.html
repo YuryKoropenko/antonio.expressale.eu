@@ -40,6 +40,14 @@
 						</div>
 					</div>
 					<div class="col-md-7">
+						<script>
+							$(document).ready(function() {
+								$('.nav-toggle').on('click', function() {
+									$(this).parent().children('.nav').fadeToggle();
+								});
+							});
+						</script>
+						<i class="nav-toggle"></i>
 						<ul class="nav">
 							<li class="nav__item">
 								<a href="#" class="nav__link">
@@ -66,7 +74,7 @@
 					<div class="col-md-2">
 						<div class="phone__wp">
 							<div class="phone">
-								+372 662 0921
+								<a href="#">+372 662 0921</a>
 							</div>
 						</div>
 					</div>
@@ -79,9 +87,9 @@
 									});
 								</script>
 								<select name="language" id="language">
-									<option selected="selected">Ru</option>
-									<option>ET</option>
-									<option>En</option>
+									<option selected="selected">Rus</option>
+									<option>EsT</option>
+									<option>Eng</option>
 								</select>
 							</div>
 						</div>
@@ -345,7 +353,7 @@
 					<div class="col-md-2">
 						<div class="phone__wp footer__top-phone-wp">
 							<div class="phone footer__top-phone">
-								+372 662 0921
+								<a href="#">+372 662 0921</a>
 							</div>
 						</div>
 					</div>

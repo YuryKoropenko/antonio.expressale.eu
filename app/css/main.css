@@ -140,6 +140,10 @@ body {
 
 .phone {
   color: #fff;
+}
+
+.phone a {
+  color: #fff;
   font-size: 16px;
   letter-spacing: 0.5px;
   display: inline-block;
@@ -177,7 +181,7 @@ body {
   font-family: FontAwesome;
   position: absolute;
   display: block;
-  right: 16px;
+  right: 8px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -196,7 +200,7 @@ body {
   font-family: FontAwesome;
   position: absolute;
   display: block;
-  right: 16px;
+  right: 8px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -209,6 +213,7 @@ body {
   padding-top: 80px;
   text-align: center;
   padding-bottom: 63px;
+  position: relative;
 }
 
 .slider .slick-dots {
@@ -264,6 +269,11 @@ body {
   height: auto;
 }
 
+.slider__right {
+  height: 352px;
+  position: relative;
+}
+
 .slider__right-title {
   color: #fff;
   font-family: "PTSerifRegular", sans-serif;
@@ -296,6 +306,9 @@ body {
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   line-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .slider__right-button:hover, .slider__right-button:focus, .slider__right-button:active {
@@ -324,7 +337,7 @@ body {
 .advantages__item-img {
   display: block;
   width: 100%;
-  height: 268px;
+  height: auto;
 }
 
 .advantages__right {
@@ -655,6 +668,7 @@ body {
 
 .list {
   padding-top: 24px;
+  margin-left: -15px;
 }
 
 .list__item {
@@ -728,6 +742,14 @@ body {
 .contacts__block-text {
   color: #808080;
   font-size: 14px;
+}
+
+.contacts__block-text a {
+  color: #808080;
+}
+
+.contacts__block-text a:hover {
+  text-decoration: underline;
 }
 
 .contacts__map {
@@ -809,7 +831,7 @@ body {
 .sponsors {
   width: 100%;
   font-size: 0;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .sponsors__item {
@@ -817,7 +839,7 @@ body {
   display: inline-block;
   position: relative;
   margin-left: 56px;
-  height: 76px;
+  height: 100px;
 }
 
 .sponsors__item img {
@@ -830,8 +852,8 @@ body {
 }
 
 .partners__item {
-  height: 355px;
-  margin-top: 16px;
+  height: 316px;
+  margin-top: 20px;
 }
 
 .partners__img-wp {
@@ -866,4 +888,9 @@ body {
   color: #808088;
   font-size: 14px;
   line-height: 24px;
+}
+
+.advantages__item-img-wp {
+  height: 268px;
+  overflow: hidden;
 }
